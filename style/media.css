@@ -15,7 +15,7 @@
 }
 @media (max-width: 450px) and (min-width: 400px) {
   .program {
-    padding-top: 8vh;
+    padding-top: 4vh;
   }
   .program__timeline::before {
     top: 21.5vh;
@@ -44,6 +44,7 @@
   .briefly::after,
   .comment::after {
   display: none;
+}
 }
 @media (max-width: 2500px) and (min-width: 450px) {
   .main-container {
