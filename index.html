@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online DR</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="/style/media.css">
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <nav>
+        <a href="#program_menu" class="nav__item">
+          <div class="nav__icon">
+            <img src="img/cake.png" alt="icon_cake">
+          </div>
+          <div class="nav__text cake">Программа</div>
+        </a>
+        <a href="#briefly" class="nav__item">
+          <div class="nav__icon">
+            <img src="img/ballon.png" alt="icon_ballon">
+          </div>
+          <div class="nav__text">Вкратце</div>
+        </a>
+      </nav>
+      <div class="banner">
+        <div class="banner__header">
+          <div class="banner__date">
+            <div class="date__first">14.10</div>
+            <div class="date__second">14.10</div>
+            <div class="date__third">14.10</div>
+          </div>
+          <div class="banner__photo">
+            <img src="img/Photo.png" alt="">
+          </div>
+        </div>
+        <div class="banner__text">
+          <div class="text__first">приглашаю</div>
+          <div class="text__second">на свой</div>
+          <div class="text__third">
+            <span>
+              <span class="dr__first">др</span>
+              <span class="dr__second">др</span>
+              <span class="dr__third">др</span>
+            </span>
+            онлайн
+          </div>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="comment__title">
+        What?
+      </div>
+      <div class="comment__content">
+        <div class="comment__icon">
+          <img src="img/Group 419.png" alt="CommentIcon">
+        </div>
+        <div class="comment__text">
+          14.10 - четверг (рабочий день), и так как Мы уже взрослые перцы то скорее всего мы работаем
+        </div>
+      </div>
+      <div class="comment__content">
+        <div class="comment__icon">
+          <img src="img/Group 670.png" alt="CommentIcon">
+        </div>
+        <div class="comment__text">
+          Хочу потусить с вами именно 14.10, потому что энергия рождения будет в зените меркурия
+        </div>
+      </div>
+      <div class="comment__content">
+        <div class="comment__icon">
+          <img src="img/Group 689.png" alt="CommentIcon">
+        </div>
+        <div class="comment__text">
+          я Придумала Очуменный формат. (Подчеркнуть слово очуменный), ибо это буммерсий вайб.
+        </div>
+      </div>
+      <div class="comment_arrow">
+        <div class="arrow_left" onclick="minusSlide()">
+          <img src="img/left_arrow.png" alt="left_arrow">
+        </div>
+        <div class="arrow_right" onclick="plusSlide()">
+          <img src="img/right_arrow.png" alt="right_arrow">
+        </div>
+      </div>
+    </div>
+    <canvas id="my-canvas"></canvas>
+    </header>
+    <section class="program" id="program_menu">
+      <div class="program__title">
+      <h2>
+        Программа
+      </h2>
+      <h4>
+        вечера, так сказать
+      </h4>
+    </div>
+    <div class="program__timeline">
+      <div class="timeline__event">
+        <div class="program__time">
+        <div class="time__first">18:00</div>
+        <div class="time__second">18:00</div>
+        <div class="time__third">18:00</div>
+        </div>
+        <div class="program__event">
+        Встечаемся
+        </div>
+        <div class="program__desc">
+        Принимаю поздравления (С радостью принимаю их и ранее)
+        </div>
+        <div class="program__img">
+        <img src="/img/birthcake.png" alt="birthcake">
+        </div>
+      </div>
+      <div class="timeline__event">
+        <div class="program__time">
+        <div class="time__first">18:20</div>
+        <div class="time__second">18:20</div>
+        <div class="time__third">18:20</div>
+        </div>
+        <div class="program__event">
+          Stand-Up от именинницы
+        </div>
+        <div class="program__desc">
+          Вы знакомы с моим юмором, поэтому как бы это, знайте что это проверочная вечеринка
+        </div>
+        <div class="program__img">
+        <img src="/img/2.png" alt="standup">
+        </div>
+      </div>
+      <div class="timeline__event">
+        <div class="program__time">
+        <div class="time__first">18:40</div>
+        <div class="time__second">18:40</div>
+        <div class="time__third">18:40</div>
+        </div>
+        <div class="program__event">
+          Перерыв на Пописать
+        </div>
+        <div class="program__desc">
+          Или другие нужды, (перерыв можно взять в любой момент)
+        </div>
+        <div class="program__img">
+        <img src="/img/3.png" alt="dog">
+        </div>
+      </div>
+      <div class="timeline__event">
+        <div class="program__time">
+        <div class="time__first">18:50</div>
+        <div class="time__second">18:50</div>
+        <div class="time__third">18:50</div>
+        </div>
+        <div class="program__event">
+          Песенный конкурс от именинницы
+        </div>
+        <div class="program__desc">
+          Я буду петь специально для вас, не благодарите
+        </div>
+        <div class="program__img">
+        <img src="/img/4.png" alt="bird">
+        </div>
+      </div>
+      <div class="timeline__event">
+        <div class="program__time">
+        <div class="time__first">19:00</div>
+        <div class="time__second">19:00</div>
+        <div class="time__third">19:00</div>
+        </div>
+        <div class="program__event">
+          Просмотр любимых стендап отрывков
+        </div>
+        <div class="program__desc">
+          Естественно любимых отривков именинницы
+        </div>
+        <div class="program__img">
+        <img src="/img/5.png" alt="cinema">
+        </div>
+      </div>
+      <div class="timeline__event">
+        <div class="program__time">
+        <div class="time__first">19:30</div>
+        <div class="time__second">19:30</div>
+        <div class="time__third">19:30</div>
+        </div>
+        <div class="program__event">
+          Завершение мероприятия
+        </div>
+        <div class="program__desc">
+          По желанию празднование можно продлить в неформальной обстановке
+        </div>
+        <div class="program__img">
+        <img src="/img/6.png" alt="birthcake">
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="location">
+      <div class="location__title">
+        <h2>
+          Гиде?
+        </h2>
+        <h4>
+          Гидеее Это будет происходить?
+        </h4>
+      </div>
+      <div class="location__content">
+        <a href="https://meet.google.com/igd-xxjw-ufb" class="location__here" target=”_blank”>
+          <span class="here__first">Тут</span>
+          <span class="here__second">Тут</span>
+          <span class="here__third">Тут</span>
+        </a>
+        <p>
+          в
+        </p>
+        <div class="location__time">
+          18:00
+        </div>
+        <div class="location__img">
+          <img src="/img/partygirl.png" alt="party">
+        </div>
+      </div>
+    </section>
+    <section id="briefly" class="briefly">
+      <div class="briefly__title">
+        <h2>
+          Прийдешь?
+        </h2>
+        <h4>
+          очень тебя жду
+        </h4>
+      </div>
+      <div class="briefly__content">
+        <div class="briefly__item">
+          <div class="briefly__icon">
+            <img src="/img/briefly1.png" alt="icon">
+          </div>
+          <div class="briefly__text">
+            Куда? Онлайн Др Насти
+          </div>
+        </div>
+        <div class="briefly__item">
+          <div class="briefly__icon">
+            <img src="/img/briefly2.png" alt="icon">
+          </div>
+          <div class="briefly__text">
+            Когда? 14.10.21 в 18:00
+          </div>
+        </div>
+        <a href="https://meet.google.com/igd-xxjw-ufb" target=”_blank” class="briefly__item" id="arrows">
+          <div class="briefly__icon">
+            <img src="/img/briefly3.png" alt="icon">
+          </div>
+          <div class="briefly__text">
+            Где? ТУТ (кликни)
+          </div>
+        </a>
+        <a href="#program_menu" class="briefly__item" id="arrow">
+          <div class="briefly__icon">
+            <img src="/img/briefly4.png" alt="icon">
+          </div>
+          <div class="briefly__text">
+            Что будет? Узнай тут
+          </div>
+        </a>
+        <div class="briefly__item">
+          <div class="briefly__icon">
+            <img src="/img/briefly5.png" alt="icon">
+          </div>
+          <div class="briefly__text">
+            Дресскод? Отсутствует
+          </div>
+        </div>
+      </div>
+      <div class="briefly__footer">
+        <a href="/doc/invitation.pdf" download="invitation" class="briefly__item item__footer">
+          <div class="briefly__icon icon__footer">
+            <img src="/img/briefly6.png" alt="icon">
+          </div>
+          <div class="briefly__text footer__text">
+            Скачать Приглашение
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="questions__title">
+        <h2>
+          Остались вопросы?
+        </h2>
+      </div>
+      <div class="questions__item questions__first">
+        <a href="mailto:siasurai@gmail.com?subject=Вопрос по ДР" target=”_blank”>
+          Напиши мне мейл с темой письма “День Рождние”</a>
+      </div>
+      <div class="questions__item questions__second">
+        <a href="tel: +420774994442">Позвони мне с кодовой фразой “ДР”</a>
+      </div>
+      <div class="questions__item questions__third">
+        <a href="https://goo.gl/maps/TSoNznLFCvgSPELA9" target=”_blank”>Посети лучший город и встреть меня в монограме</a>
+      </div>
+      <div class="question__footer">
+        <img src="/img/ballon1.png" alt="ballon">
+        <img src="/img/ballon2.png" alt="ballon">
+        <img src="/img/ballon3.png" alt="ballon">
+        <img src="/img/ballon4.png" alt="ballon">
+        <img src="/img/ballon5.png" alt="ballon">
+        <img src="/img/ballon6.png" alt="ballon">
+        <img src="/img/ballon7.png" alt="ballon">
+      </div>
+      <a href="#" class="question__arrow">
+        <img src="/img/Group 158.png" alt="arrow">
+      </a>
+    </section>
+  </div>
+    <script src="/script/script.js"></script>
+    <script src="/script/index.min.js"></script>
+    <script src="/script/confetti.js"></script>
+</body>
+</html>

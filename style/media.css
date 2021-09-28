@@ -1,0 +1,50 @@
+@media (max-width: 400px) and (min-width: 375px) {
+  .comment {
+    bottom: 0;
+  }
+  .program__title {
+    padding-top: 18vh;
+  }
+  .program__timeline::before {
+    top: 32.5vh;
+    height: 92.5%;
+  }
+  .timeline__event {
+    padding: 4vh 2vh 0;
+  }
+}
+@media (max-width: 450px) and (min-width: 400px) {
+  .program {
+    padding-top: 8vh;
+  }
+  .program__timeline::before {
+    top: 21.5vh;
+    height: 94.5%;
+  }
+}
+@media (max-width: 2500px) and (min-width: 450px) {
+  .main-container {
+    display: none;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(179.96deg, #43CEA2 0.98%, #185A9D 99.95%);
+  }
+  body::before {
+    content: 'Еще ведутся работы над десктопной версией, пожалуйста воспользуйтесь мобилкой для посещения данной страницы';
+    text-align: left;
+    display: flex;
+    height: 100%;
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 1.3em;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 0.8px #FFFFFF;
+  }
+}
