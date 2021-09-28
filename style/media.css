@@ -21,6 +21,29 @@
     top: 21.5vh;
     height: 94.5%;
   }
+  #arrows::after {
+    right: 22%;
+  }
+  #arrow::after {
+    right: 12%;
+  }
+  .questions__first::after {
+    right: 22%;
+  }
+  .questions__second::after {
+    right: 55%;
+  }
+  .questions__third::after {
+    right: 12%;
+  }
+}
+@media (max-width: 450px) and (min-width: 420px) {
+  .comment::after,
+  .program__timeline::after, 
+  .location::after,
+  .briefly::after,
+  .comment::after {
+  display: none;
 }
 @media (max-width: 2500px) and (min-width: 450px) {
   .main-container {
