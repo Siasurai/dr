@@ -15,7 +15,7 @@ a {
 .main-container {
   background: linear-gradient(179.96deg, #43CEA2 0.98%, #185A9D 99.95%);
 }
-::-webkit-scrollbar {
+.element::-webkit-scrollbar {
   width: 0;
 }
 #progressbar {
@@ -24,11 +24,12 @@ a {
   right: 3vh;
   width: 5px;
   background: linear-gradient(to bottom, #fec5a3, #43CEA2);
+  border-radius: 10px 1px;
   /* background: #fec5a3; */
   z-index: 10;
 }
 .progressbar__point {
-  height: 100%;
+  height: 92%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -446,7 +447,7 @@ nav,
 }
 .questions {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding-bottom: 9vh;
 }
 .questions__item a{
