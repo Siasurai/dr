@@ -1,7 +1,3 @@
-var Scrollbar = window.Scrollbar;
-
-Scrollbar.init(document.querySelector('.main-container'));
-
 var slideIndex = 0;
 showSlides(slideIndex);
 
