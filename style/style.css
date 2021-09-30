@@ -15,6 +15,33 @@ a {
 .main-container {
   background: linear-gradient(179.96deg, #43CEA2 0.98%, #185A9D 99.95%);
 }
+::-webkit-scrollbar {
+  width: 0;
+}
+#progressbar {
+  position: fixed;
+  top: 29vh;
+  right: 3vh;
+  width: 5px;
+  background: linear-gradient(to bottom, #fec5a3, #43CEA2);
+  /* background: #fec5a3; */
+  z-index: 10;
+}
+.progressbar__point {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.progressbar__point a {
+  text-decoration: none;
+}
+.progressbar__point a:nth-child(2),
+.progressbar__point a:nth-child(3),
+.progressbar__point a:nth-child(4){
+  padding: 2vh 0;
+}
 header {
   height: 100vh;
 }
@@ -513,6 +540,7 @@ nav,
   align-items: center;
   justify-content: center;
   align-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .question__arrow img {
   max-width: 45px;
