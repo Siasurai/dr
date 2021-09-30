@@ -13,6 +13,8 @@ a {
   display: block;
 }
 .main-container {
+  height: 100%;
+  width: 100%;
   background: linear-gradient(179.96deg, #43CEA2 0.98%, #185A9D 99.95%);
 }
 header {
