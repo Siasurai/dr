@@ -1,3 +1,28 @@
+function scrollTo (element) {
+  window.scroll({
+    left: 0,
+    top: element.offsetTop,
+    behavior: 'smooth'
+  })
+}
+
+var btnProg = document.querySelector(".button");
+var btnBrief = document.querySelector(".btnBrief");
+var backtonav = document.querySelector(".question__arrow");
+var goalProg = document.querySelector("#program_menu");
+var goalBrief = document.querySelector('#briefly')
+var goalNav = document.querySelector ('nav')
+btnProg.addEventListener('click', () => {
+  scrollTo(goalProg);
+})
+btnBrief.addEventListener('click', () => {
+  scrollTo(goalBrief);
+})
+backtonav.addEventListener('click', () => {
+  scrollTo(goalNav);
+})
+
+
 var slideIndex = 0;
 showSlides(slideIndex);
 
