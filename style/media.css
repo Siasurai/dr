@@ -18,7 +18,7 @@
     height: 95vh;
   }
   header #my-canvas {
-    bottom: 75vh;
+    bottom: 79vh;
     height: 55vh;
   }
   /* .program__timeline::before {
@@ -27,7 +27,7 @@
 }
 @media (max-width: 450px) and (min-width: 400px) {
   .program {
-    padding-top: 3vh;
+    padding-top: 4.5vh;
   }
   .program__timeline::before {
     top: 21.5vh;

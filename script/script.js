@@ -1,3 +1,7 @@
+var Scrollbar = window.Scrollbar;
+
+Scrollbar.init(document.querySelector('.main-container'));
+
 var slideIndex = 0;
 showSlides(slideIndex);
 
@@ -48,15 +52,4 @@ let elements = document.querySelectorAll('.element-animation');
 for (let elm of elements) {
   observer.observe(elm);
 }
-
-// function showIt(el_class) {
-//   var el = document.getElementsByClassName(el_class);
-//   el.scrollIntoView(true, {behavior: "smooth"});
-// }
-// showIt('main-container')
-
-
-  // var el = document.getElementsByClassName('main-container'); 
-  // el.scrollIntoView(true, {behavior: "smooth"});
-
   

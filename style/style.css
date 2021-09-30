@@ -71,8 +71,7 @@ nav,
 .date__second {
   position: absolute;
   font-size: 1.05em;
-  color: #BD0000;
-  mix-blend-mode: color-dodge;
+  color: #fec5a3;
   z-index: 2;
 }
 .date__third {
@@ -122,8 +121,7 @@ nav,
 .here__second {
   position: absolute;
   font-size: 1.05em;
-  color: #BD0000;
-  mix-blend-mode: color-dodge;
+  color:#fec5a3;
   -webkit-text-stroke: 0;
   z-index: 2;
 }
@@ -332,8 +330,7 @@ nav,
   position: absolute;
   top: 0;
   font-size: 1.03em;
-  color: #BD0000;
-  mix-blend-mode: color-dodge;
+  color:#fec5a3;
   z-index: 2;
 }
 .time__third {
