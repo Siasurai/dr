@@ -23,11 +23,13 @@ header #my-canvas {
   bottom: 84vh;
   height: 70vh;
   width: 100%;
+  z-index: 4;
 }
 nav {
   display: flex;
   justify-content: space-around;
   padding: 2vh 0;
+  z-index: 5;
 }
 nav, 
 .nav__item {
@@ -180,7 +182,7 @@ nav,
   bottom: 7vh;
   right: -97vw;
 }
-.comment::after {
+/* .comment::after {
   content: '';
   position: absolute;
   top: 90%;
@@ -224,7 +226,7 @@ nav,
   background-repeat: no-repeat;
   width: 100%;
   height: 35%;
-}
+} */
 /* .comment::after {
   content: '';
   position: absolute;
@@ -420,7 +422,7 @@ nav,
 }
 .questions {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-bottom: 9vh;
 }
 .questions__item a{
@@ -528,4 +530,13 @@ nav,
     transform: translateY(-80vh);
     opacity: 0;
   }
+}
+.element-animation {
+  opacity: 0;
+  transform: translateY(20%);
+}
+.element-animation.element-show {
+  opacity: 1;
+  transition: all .8s;
+  transform: translateY(0%);
 }

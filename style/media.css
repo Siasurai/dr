@@ -6,20 +6,32 @@
     padding-top: 18vh;
   }
   .program__timeline::before {
-    top: 32.5vh;
-    height: 92.5%;
+    top: 33vh;
+    height: 90%;
   }
   .timeline__event {
     padding: 4vh 2vh 0;
   }
 }
+@media (max-height: 896px) {
+  header {
+    height: 95vh;
+  }
+  header #my-canvas {
+    bottom: 85vh;
+    height: 63vh;
+  }
+  /* .program__timeline::before {
+    top: 15.5vh;
+  } */
+}
 @media (max-width: 450px) and (min-width: 400px) {
   .program {
-    padding-top: 4vh;
+    padding-top: 8vh;
   }
   .program__timeline::before {
     top: 21.5vh;
-    height: 94.5%;
+    height: 92.5%;
   }
   #arrows::after {
     right: 22%;
