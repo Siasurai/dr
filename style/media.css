@@ -2,9 +2,6 @@
   .comment {
     bottom: 0;
   }
-  .program__title {
-    padding-top: 18vh;
-  }
   .program__timeline::before {
     top: 33vh;
     height: 90%;
@@ -27,7 +24,7 @@
 }
 @media (max-width: 450px) and (min-width: 400px) {
   .program {
-    padding-top: 4.5vh;
+    padding-top: 7.5vh;
   }
   .program__timeline::before {
     top: 21.5vh;
