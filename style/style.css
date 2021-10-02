@@ -23,9 +23,9 @@ a {
   top: 29vh;
   right: 3vh;
   width: 5px;
+  background: #fec5a3;
   background: linear-gradient(to bottom, #fec5a3, #43CEA2);
   border-radius: 10px 1px;
-  /* background: #fec5a3; */
   z-index: 10;
 }
 .progressbar__point {
@@ -41,7 +41,7 @@ a {
 .progressbar__point a:nth-child(2),
 .progressbar__point a:nth-child(3),
 .progressbar__point a:nth-child(4){
-  padding: 2vh 0;
+  padding: 1vh 0;
 }
 header {
   height: 100vh;
@@ -443,7 +443,7 @@ nav,
   width: 11%;
 }
 .questions__title {
-  padding: 4vh 0;
+  padding-top: 4vh;
 }
 .questions {
   position: relative;
@@ -461,35 +461,36 @@ nav,
 }
 .questions__item {
   position: relative;
-  padding: 0 4vh 3vh;
+  padding: 2vh 1vh;
   z-index: 1;
+  width: 80%;
+  background: rgba(196, 196, 196, 0.06);
+  border-radius: 3px;
+  margin: 5vh auto;
 }
-.questions__first::after {
-  content: '';
-  position: absolute;
-  background: url(../img/brieflyArrow.png) no-repeat;
-  height: 100%;
-  width: 7%;
-  bottom: -53%;
-  right: 13%;
+.questions__first:hover,
+.questions__first:active {
+  background: #3EBFA2;
+  opacity: 0.9;
 }
-.questions__second::after  {
-  content: '';
-  position: absolute;
-  background: url(../img/brieflyArrow.png) no-repeat;
-  height: 100%;
-  width: 7%;
-  bottom: -53%;
-  right: 49%;
+.questions__second:hover,
+.questions__second:active {
+  background: #72cac3;
+  opacity: 0.9;
 }
-.questions__third::after  {
-  content: '';
-  position: absolute;
-  background: url(../img/brieflyArrow.png) no-repeat;
-  height: 39%;
-  width: 7%;
-  bottom: 7%;
-  right: 3%;
+.questions__third:hover,
+.questions__third:active {
+  background: #49aecd;
+  opacity: 0.9;
+}
+.questions__first {
+  box-shadow: 1px 5px 10px #3EBFA2;
+}
+.questions__second {
+  box-shadow: 1px 5px 10px #72cac3;
+}
+.questions__third {
+  box-shadow: 1px 5px 10px #49aecd;
 }
 .question__footer {
   padding-top: 3vh;
