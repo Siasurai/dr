@@ -24,7 +24,7 @@ a {
   right: 3vh;
   width: 5px;
   background: #fec5a3;
-  background: linear-gradient(to bottom, #fec5a3, #43CEA2);
+  /* background: linear-gradient(to bottom, #fec5a3, #43CEA2); */
   border-radius: 10px 1px;
   z-index: 10;
 }
